@@ -1,10 +1,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
-:root{
-	--bg-primary:#0070fa;
-	--color-primary:#0070fa;
-}
 
+   
 /* for links and lists 
 */
 a{
@@ -48,7 +45,7 @@ h1{
     
     .mainheader{
      width: 100%;
-     background : linear-gradient(rgba( 0,112,250,0.1),rgba(0,112,250,0.4));
+     background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(9, 76, 169));
      height: 120px;
      display: flex;
      justify-content: space-between;
@@ -89,12 +86,14 @@ h1{
      border: none;
      background-image: linear-gradient(to right,#649bff,#0070fa,#649bff);
      border-radius: 10px;
+     transition-duration: 0.4s;
+     
     }
     
     
     main{
-        background-image:url('images/blog1.jpg');
-        background-repeat: no-repeat;
+        /* background-image:url('images/b.png');
+        background-repeat: no-repeat; */
         background-size: 100% 100%;
         width: 100%;
         height:100vh;
@@ -102,25 +101,42 @@ h1{
      justify-content: space-between;
      align-items: center;
     }
-    
-    main .right-sec{
-     padding-right: 70px;
-    }
-    
-    main .left-sec{
-     padding-left: 100px;
-     padding-top:10px;
-    }
 
-    .left-sec h3{
-        color:#0070fa;
+    video {
+    position:absolute;
+    z-index:-1;
+    top:0;
+    left:0;
+    width:100%; 
+    height:auto;
+      }
+      .left-sec {
+        height: 80vh;
+        width:100%;
+       
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+      }
+    
+   .content{
+    background: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin:50px;
+   }
+   
+    
+
+    h3{
+        color:rgb(25, 249, 242);
+        font-size: 36px;
     }
     
-    .left-sec h2{
-     font-size:40px;   
+     h2{
+     font-size:30px;   
      text-transform: capitalize;
      font-weight: bold;
-     color: rgb(39, 39, 136);
+     color: white;
      margin-top: 10px;
      margin-bottom:10px;
     }
@@ -130,14 +146,15 @@ h1{
      text-transform: capitalize;
      font-weight: 700;
      margin: 15px 0;
-     color:#0070fa
+     color:white;
     }
     
     .left-sec p{
-     margin-bottom: 30px;
-     color:blue;
+     margin-bottom: 20px;
+     color:rgb(237, 27, 240);
      font-style:italic;
-     font-weight:300;
+     font-weight:bold;
+     font-size: 30px;
     }
     
     .left-sec button{
@@ -154,21 +171,27 @@ h1{
     
 /*Services Section*/
 
+
+
 .section-title {
     margin-bottom: 60px;
 }
 
 section.services-section {
         padding: 30px 0px;
-    background: #efefef;
+        background-image: linear-gradient(to right,#6fb1eb,#3f8ff0,#575fd7);
+}
+
+.services-section .container {
+    background-color:rgb(89, 149, 229);
 }
 
 .services-box {
-    background: #FFF;
     padding: 20px;
     margin-bottom: 50px;
     text-align: center;
 }
+
 
 .services-box h3 {
     margin: 15px 0px 20px;
@@ -219,6 +242,7 @@ margin: 7px 0px 50px;
 
 /*team Section*/
 
+
 section.team-section {
     padding: 30px 0px;
 }
@@ -234,15 +258,22 @@ section.team-section {
 .team-info h3 {
     margin-top: 26px;
     margin-bottom: 0;
+    color:#0070fa;
+}
+
+ul.team-social {
+    color:white;
 }
 
 ul.team-social li {
     display: inline-block;
+    
 }
 
 ul.team-social li a {
     width: 35px;
     height: 35px;
+   
     border: 1px solid var(--color-primary);
     display: inline-block;
     text-align: center;
@@ -255,29 +286,38 @@ ul.team-social li a {
  
 /*Footer */
 
-.section footer {
-    padding-top:30px;
-    padding: 40px 10px;
-    color: #FFF;
- 
-    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)),url(../images/booking-bg.jpg) no-repeat;
-    background-size: cover;
+footer {
+    /* background-image: linear-gradient(to bottom right,rgb(9, 76, 169), rgb(255, 255, 255));
+     */
+     background-image:url('images/b.png');
+    
+    
+
+}
+
+.row{
+   
+    background: rgba(0, 0, 0, 0.5);
 }
 
 ul.footer-address li i {
-    position: absolute;
+    position: absolte;
     left: 0;
     top: 10px;
     font-size: 22px;
+}
+.footer-widget h3{
+    color:#0070fa
 }
 
 ul.footer-address li {
     position: relative;
     padding-left: 35px;
+    color:white
 }
 
 ul.footer-address li a {
-    color: #FFF;
+    color: white;
 }
 
 .footer-widget h3 {
